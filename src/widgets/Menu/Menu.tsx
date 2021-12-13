@@ -25,7 +25,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 16px;
+  // padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
   background-color: ${({ theme }) => theme.colors.white};
@@ -71,6 +71,7 @@ const Menu: React.FC<NavProps> = ({
   cakePriceUsd,
   links,
   children,
+  isChristmas
 }) => {
   const { isMobile } = useMatchBreakpoints();
   // const isMobile = isXl === false;
@@ -121,6 +122,7 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
           isMobile={isMobile}
+          isChristmas={isChristmas}
         />
         {userMenu}
       </StyledNav>

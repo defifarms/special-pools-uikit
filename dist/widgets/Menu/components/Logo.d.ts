@@ -5,6 +5,7 @@ interface Props {
     togglePush: () => void;
     href: string;
     isMobile: boolean;
+    isChristmas?: boolean;
 }
 declare const _default: React.NamedExoticComponent<Props>;
 export default _default;

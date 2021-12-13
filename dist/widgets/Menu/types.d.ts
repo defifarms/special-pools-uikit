@@ -42,4 +42,5 @@ export interface PanelProps {
 export interface NavProps extends PanelProps {
     userMenu?: ReactElement;
     isDark: boolean;
+    isChristmas?: boolean;
 }
