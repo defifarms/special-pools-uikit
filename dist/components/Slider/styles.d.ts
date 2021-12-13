@@ -7,6 +7,7 @@ interface StyledInputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 interface DisabledProp {
     disabled?: boolean;
+    isMax?: boolean;
 }
 export declare const SliderLabelContainer: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, {}, never>;
 export declare const SliderLabel: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, import("../Text").TextProps & SliderLabelProps, never>;

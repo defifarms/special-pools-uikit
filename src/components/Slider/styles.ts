@@ -15,6 +15,7 @@ interface StyledInputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 interface DisabledProp {
   disabled?: boolean;
+  isMax?: boolean;
 }
 
 const getCursorStyle = ({ disabled = false }: DisabledProp) => {
@@ -23,7 +24,7 @@ const getCursorStyle = ({ disabled = false }: DisabledProp) => {
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
-  background-image: url(${isMax ? bunnyHeadMax : bunnyHeadMain});
+  // background-image: url(${isMax ? bunnyHeadMax : bunnyHeadMain});
   background-color: transparent;
   border: 0;
   cursor: ${getCursorStyle};
@@ -34,7 +35,10 @@ const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   transition: 200ms transform;
 
   &:hover {
-    transform: ${disabled ? "scale(1) translate(-2px, -2px)" : "scale(1.1) translate(-3px, -3px)"};
+    transform: ${disabled
+    ? "scale(1) translate(-2px, -2px)"
+    : "scale(1.1) translate(-3px, -3px)"
+  };
   }
 `;
 
@@ -45,7 +49,7 @@ export const SliderLabelContainer = styled.div`
   width: calc(100% - 30px);
 `;
 
-export const SliderLabel = styled(Text)<SliderLabelProps>`
+export const SliderLabel = styled(Text) <SliderLabelProps>`
   bottom: 0;
   font-size: 12px;
   left: ${({ progress }) => progress};
@@ -55,7 +59,7 @@ export const SliderLabel = styled(Text)<SliderLabelProps>`
 `;
 
 export const BunnyButt = styled.div<DisabledProp>`
-  background: url(${bunnyButt}) no-repeat;
+  // background: url(${bunnyButt}) no-repeat;
   height: 32px;
   filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
   position: absolute;
@@ -87,11 +91,14 @@ export const StyledInput = styled.input<StyledInputProps>`
 `;
 
 export const BarBackground = styled.div<DisabledProp>`
-  background-color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "inputSecondary"]};
-  height: 2px;
+  background-color: ${({ theme, disabled }) =>
+    disabled ? theme.colors["textDisabled"] : '#B1ECFF'};
+  height: 10px;
   position: absolute;
   top: 18px;
   width: 100%;
+  border-radius: 16px
+
 `;
 
 export const BarProgress = styled.div<DisabledProp>`
@@ -100,4 +107,17 @@ export const BarProgress = styled.div<DisabledProp>`
   height: 10px;
   position: absolute;
   top: 18px;
+    ${({ isMax }) =>
+    isMax ?
+      `
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  ` :
+      `
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  `
+  }
 `;
