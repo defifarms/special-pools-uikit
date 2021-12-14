@@ -2,9 +2,9 @@ import { darkColors, lightColors } from "../../theme/colors";
 import { ModalTheme } from "./types";
 
 export const light: ModalTheme = {
-  background: lightColors.backgroundAlt,
+  background: '#2C007C',
 };
 
 export const dark: ModalTheme = {
-  background: darkColors.backgroundAlt,
+  background: '#2C007C',
 };
