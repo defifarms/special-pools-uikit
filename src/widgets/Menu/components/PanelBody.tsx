@@ -88,7 +88,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
                     <MenuLink href={item.href} target={item.target}>
                       <LinkLabel isPushed={isPushed}>{item.label}</LinkLabel>
                       {item.status && (
-                        <LinkStatus color={item.status.color} fontSize="14px">
+                        <LinkStatus color={item.status.color} fontSize="12px">
                           {item.status.text}
                         </LinkStatus>
                       )}
@@ -108,7 +108,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               {iconElement}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
               {entry.status && (
-                <LinkStatus color={entry.status.color} fontSize="14px">
+                <LinkStatus color={entry.status.color} fontSize="12px">
                   {entry.status.text}
                 </LinkStatus>
               )}
