@@ -74,7 +74,7 @@ const ModalProvider: React.FC = ({ children }) => {
     >
       {isOpen && (
         <ModalWrapper>
-          <Overlay onClick={handleOverlayDismiss} />
+          <Overlay show onClick={handleOverlayDismiss} />
           {React.isValidElement(modalNode) &&
             React.cloneElement(modalNode, {
               onDismiss: handleDismiss,

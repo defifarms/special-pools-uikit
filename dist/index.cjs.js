@@ -2982,10 +2982,10 @@ var dark$2 = {
 };
 
 var light$1 = {
-    background: '#2C007C',
+    background: '#2C007C80',
 };
 var dark$1 = {
-    background: '#2C007C',
+    background: '#2C007C80',
 };
 
 var light = {
@@ -4436,7 +4436,7 @@ var ModalBackButton = function (_a) {
     return (React__default["default"].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
         React__default["default"].createElement(Icon$1U, { color: "primary" })));
 };
-var ModalContainer = styled__default["default"](Box)(templateObject_4$5 || (templateObject_4$5 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: ", ";\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: ", ";\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
+var ModalContainer = styled__default["default"](Box)(templateObject_4$5 || (templateObject_4$5 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: ", ";\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n  backdrop-filter: blur(5px);\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: ", ";\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n  backdrop-filter: blur(5px);\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.modal.background;
 }, function (_a) {
@@ -4513,7 +4513,7 @@ var ModalProvider = function (_a) {
             setCloseOnOverlayClick: setCloseOnOverlayClick,
         } },
         isOpen && (React__default["default"].createElement(ModalWrapper, null,
-            React__default["default"].createElement(Overlay, { onClick: handleOverlayDismiss }),
+            React__default["default"].createElement(Overlay, { show: true, onClick: handleOverlayDismiss }),
             React__default["default"].isValidElement(modalNode) &&
                 React__default["default"].cloneElement(modalNode, {
                     onDismiss: handleDismiss,
