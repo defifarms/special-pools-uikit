@@ -3805,7 +3805,7 @@ var baseColors = {
     primaryBright: "#53DEE9",
     cyan: "#3AB6DE",
     primaryDark: "#0098A1",
-    secondary: "#000000",
+    secondary: "#fff",
     tagSecondary: "#e6edfc",
     success: "#31D0AA",
     warning: "#FFB237",
