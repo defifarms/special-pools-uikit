@@ -25,14 +25,14 @@ const DefaultTemplate: React.FC = (args) => {
             <Heading size="md" mb="8px">
               {capitalize(variant)}
             </Heading>
-            <Progress variant={variant} primaryStep={progress} {...args} />
+            <Progress variant={variant} primaryStep={progress} />
           </Box>
         );
       })}
       <Heading size="md" mb="8px">
         Small
       </Heading>
-      <Progress scale="sm" primaryStep={progress} {...args} />
+      <Progress scale="sm" primaryStep={progress} />
       <div style={{ marginTop: "32px" }}>
         <Button type="button" scale="sm" onClick={handleClick}>
           Random Progress
@@ -40,12 +40,6 @@ const DefaultTemplate: React.FC = (args) => {
       </div>
     </div>
   );
-};
-
-export const Default = DefaultTemplate.bind({});
-
-Default.args = {
-  useDark: false,
 };
 
 export const WithSecondary: React.FC = () => {
@@ -56,10 +50,19 @@ export const WithSecondary: React.FC = () => {
     <div style={{ padding: "32px", width: "400px" }}>
       <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} />
       <div style={{ marginTop: "32px" }}>
-        <Button type="button" scale="sm" onClick={() => setPrimaryStep(random(1, 100))}>
+        <Button
+          type="button"
+          scale="sm"
+          onClick={() => setPrimaryStep(random(1, 100))}
+        >
           Random Primary Progress
         </Button>
-        <Button style={{ marginTop: "16px" }} type="button" scale="sm" onClick={() => setSecondaryStep(random(1, 100))}>
+        <Button
+          style={{ marginTop: "16px" }}
+          type="button"
+          scale="sm"
+          onClick={() => setSecondaryStep(random(1, 100))}
+        >
           Random Secondary Progress
         </Button>
       </div>
@@ -73,12 +76,25 @@ export const WithSecondaryAndProgressBunny: React.FC = () => {
 
   return (
     <div style={{ padding: "32px", width: "400px" }}>
-      <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressBunny />
+      <Progress
+        primaryStep={primaryStep}
+        secondaryStep={secondaryStep}
+        showProgressBunny
+      />
       <div style={{ marginTop: "32px" }}>
-        <Button type="button" scale="sm" onClick={() => setPrimaryStep(random(1, 100))}>
+        <Button
+          type="button"
+          scale="sm"
+          onClick={() => setPrimaryStep(random(1, 100))}
+        >
           Random Primary Progress
         </Button>
-        <Button style={{ marginTop: "16px" }} type="button" scale="sm" onClick={() => setSecondaryStep(random(1, 100))}>
+        <Button
+          style={{ marginTop: "16px" }}
+          type="button"
+          scale="sm"
+          onClick={() => setSecondaryStep(random(1, 100))}
+        >
           Random Secondary Progress
         </Button>
       </div>

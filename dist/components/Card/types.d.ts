@@ -8,6 +8,7 @@ export interface CardRibbonProps extends SpaceProps, HTMLAttributes<HTMLDivEleme
 }
 export declare type CardTheme = {
     background: string;
+    backgroundCardTransparent: string;
     boxShadow: string;
     boxShadowActive: string;
     boxShadowSuccess: string;

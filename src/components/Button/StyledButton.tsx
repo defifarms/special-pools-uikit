@@ -15,7 +15,7 @@ const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
   if ($isLoading === true) {
     return `
       &:disabled,
-      &.pancake-button--disabled {
+      &.defifarms-button--disabled {
         cursor: not-allowed;
       }
     `;
@@ -23,7 +23,7 @@ const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
 
   return `
     &:disabled,
-    &.pancake-button--disabled {
+    &.defifarms-button--disabled {
       background-color: ${theme.colors.backgroundDisabled};
       border-color: ${theme.colors.backgroundDisabled};
       box-shadow: none;
@@ -46,13 +46,12 @@ const getOpacity = ({ $isLoading = false }: TransientButtonProps) => {
 const StyledButton = styled.button<BaseButtonProps>`
   align-items: center;
   border: 0;
-  border-radius: ${({ theme }) => theme.radii.default};
-  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
+  border-radius: ${({ theme, isRound, borderRadius }) => (borderRadius ? borderRadius :isRound ? theme.radii.rounded : theme.radii.default )};;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -60,11 +59,11 @@ const StyledButton = styled.button<BaseButtonProps>`
   outline: 0;
   transition: background-color 0.2s, opacity 0.2s;
 
-  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+  &:hover:not(:disabled):not(.defifarms-button--disabled):not(.defifarms-button--disabled):not(:active) {
     opacity: 0.65;
   }
 
-  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+  &:active:not(:disabled):not(.defifarms-button--disabled):not(.defifarms-button--disabled) {
     opacity: 0.85;
     transform: translateY(1px);
     box-shadow: none;

@@ -22,8 +22,10 @@ const ModalWrapper = styled.div`
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
   z-index: ${({ theme }) => theme.zIndices.modal - 1};
+  ${({ theme }) => theme.mediaQueries.nav} {
+    width: calc(100% - 243px);
+  }
 `;
 
 export const Context = createContext<ModalsContext>({
