@@ -18,7 +18,7 @@ export const scaleVariants = {
 
 export const styleVariants = {
   [variants.PRIMARY]: {
-    backgroundColor: "primary",
+    backgroundColor: "cyan",
     color: "white",
   },
   [variants.SECONDARY]: {
@@ -53,9 +53,8 @@ export const styleVariants = {
     color: "primary",
     boxShadow: "none",
   },
-  [variants.LIGHT]: {
-    backgroundColor: "input",
-    color: "textSubtle",
-    boxShadow: "none",
+  [variants.FOUR]: {
+    backgroundColor: "four",
+    color: "white",
   },
 };

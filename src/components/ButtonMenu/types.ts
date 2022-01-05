@@ -1,9 +1,10 @@
 import { ReactElement } from "react";
-import { SpaceProps } from "styled-system";
+import { SpaceProps, BorderRadiusProps } from "styled-system";
 import { BaseButtonProps, Scale, variants } from "../Button/types";
 
 export interface ButtonMenuItemProps extends BaseButtonProps {
   isActive?: boolean;
+  isRound?: boolean;
 }
 
 export interface ButtonMenuProps extends SpaceProps {
@@ -14,4 +15,8 @@ export interface ButtonMenuProps extends SpaceProps {
   disabled?: boolean;
   children: ReactElement[];
   fullWidth?: boolean;
+  isRound?: boolean;
+  borderRadius?: string;
+  isBorder?: boolean;
+  bgColor?: string;
 }

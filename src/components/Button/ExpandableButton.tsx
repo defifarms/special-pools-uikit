@@ -6,13 +6,23 @@ import IconButton from "./IconButton";
 interface Props {
   onClick?: () => void;
   expanded?: boolean;
+  color?: string;
 }
 
-export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children }) => {
+export const ExpandableButton: React.FC<Props> = ({
+  onClick,
+  expanded,
+  children,
+  color = 'invertedContrast',
+}) => {
   return (
-    <IconButton aria-label="Hide or show expandable content" onClick={onClick}>
+    <IconButton color={color} aria-label="Hide or show expandable content" onClick={onClick}>
       {children}
-      {expanded ? <ChevronUpIcon color="invertedContrast" /> : <ChevronDownIcon color="invertedContrast" />}
+      {expanded ? (
+        <ChevronUpIcon color={color} />
+      ) : (
+        <ChevronDownIcon color={color} />
+      )}
     </IconButton>
   );
 };
@@ -20,13 +30,25 @@ ExpandableButton.defaultProps = {
   expanded: false,
 };
 
-export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded, children }) => {
+export const ExpandableLabel: React.FC<Props> = ({
+  onClick,
+  expanded,
+  children,
+  color = 'primary',
+}) => {
   return (
     <Button
       variant="text"
       aria-label="Hide or show expandable content"
       onClick={onClick}
-      endIcon={expanded ? <ChevronUpIcon color="primary" /> : <ChevronDownIcon color="primary" />}
+      color={color}
+      endIcon={
+        expanded ? (
+          <ChevronUpIcon color={color} />
+        ) : (
+          <ChevronDownIcon color={color} />
+        )
+      }
     >
       {children}
     </Button>

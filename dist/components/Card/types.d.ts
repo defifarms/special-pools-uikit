@@ -8,6 +8,7 @@ export interface CardRibbonProps extends SpaceProps, HTMLAttributes<HTMLDivEleme
 }
 export declare type CardTheme = {
     background: string;
+    backgroundCardTransparent: string;
     boxShadow: string;
     boxShadowActive: string;
     boxShadowSuccess: string;
@@ -26,6 +27,4 @@ export interface CardProps extends SpaceProps, HTMLAttributes<HTMLDivElement> {
     isWarning?: boolean;
     isDisabled?: boolean;
     ribbon?: React.ReactNode;
-    borderBackground?: string;
-    background?: string;
 }

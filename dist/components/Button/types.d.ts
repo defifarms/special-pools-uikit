@@ -14,7 +14,7 @@ export declare const variants: {
     readonly DANGER: "danger";
     readonly SUBTLE: "subtle";
     readonly SUCCESS: "success";
-    readonly LIGHT: "light";
+    readonly FOUR: "four";
 };
 export declare type Scale = typeof scales[keyof typeof scales];
 export declare type Variant = typeof variants[keyof typeof variants];
@@ -36,5 +36,7 @@ export interface BaseButtonProps extends LayoutProps, SpaceProps {
     disabled?: boolean;
     startIcon?: ReactNode;
     endIcon?: ReactNode;
+    isRound?: boolean;
+    borderRadius?: string;
 }
 export declare type ButtonProps<P extends ElementType = "button"> = PolymorphicComponentProps<P, BaseButtonProps>;
