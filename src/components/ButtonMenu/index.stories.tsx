@@ -30,7 +30,20 @@ export const Default: React.FC = () => {
   return (
     <>
       <Row>
-        <ButtonMenu activeIndex={index} onItemClick={handleClick}>
+        <ButtonMenu activeIndex={index} onItemClick={handleClick} borderRadius="10px">
+          <ButtonMenuItem borderRadius="10px">Button 1</ButtonMenuItem>
+          <ButtonMenuItem>Button 2</ButtonMenuItem>
+          <ButtonMenuItem>Button 3</ButtonMenuItem>
+          <ButtonMenuItem>Button 4</ButtonMenuItem>
+        </ButtonMenu>
+      </Row>
+      <Row>
+        <ButtonMenu
+          activeIndex={index1}
+          onItemClick={handleClick1}
+          scale="sm"
+          ml="24px"
+        >
           <ButtonMenuItem>Button 1</ButtonMenuItem>
           <ButtonMenuItem>Button 2</ButtonMenuItem>
           <ButtonMenuItem>Button 3</ButtonMenuItem>
@@ -38,7 +51,11 @@ export const Default: React.FC = () => {
         </ButtonMenu>
       </Row>
       <Row>
-        <ButtonMenu activeIndex={index1} onItemClick={handleClick1} scale="sm" ml="24px">
+        <ButtonMenu
+          activeIndex={index}
+          onItemClick={handleClick}
+          variant="subtle"
+        >
           <ButtonMenuItem>Button 1</ButtonMenuItem>
           <ButtonMenuItem>Button 2</ButtonMenuItem>
           <ButtonMenuItem>Button 3</ButtonMenuItem>
@@ -46,15 +63,13 @@ export const Default: React.FC = () => {
         </ButtonMenu>
       </Row>
       <Row>
-        <ButtonMenu activeIndex={index} onItemClick={handleClick} variant="subtle">
-          <ButtonMenuItem>Button 1</ButtonMenuItem>
-          <ButtonMenuItem>Button 2</ButtonMenuItem>
-          <ButtonMenuItem>Button 3</ButtonMenuItem>
-          <ButtonMenuItem>Button 4</ButtonMenuItem>
-        </ButtonMenu>
-      </Row>
-      <Row>
-        <ButtonMenu activeIndex={index1} onItemClick={handleClick1} scale="sm" variant="subtle" ml="24px">
+        <ButtonMenu
+          activeIndex={index1}
+          onItemClick={handleClick1}
+          scale="sm"
+          variant="subtle"
+          ml="24px"
+        >
           <ButtonMenuItem>Button 1</ButtonMenuItem>
           <ButtonMenuItem>Button 2</ButtonMenuItem>
           <ButtonMenuItem>Button 3</ButtonMenuItem>
@@ -68,14 +83,14 @@ export const Default: React.FC = () => {
 export const AsLinks: React.FC = () => {
   return (
     <Row>
-      <ButtonMenu activeIndex={0}>
-        <ButtonMenuItem as="a" href="https://pancakeswap.finance">
+      <ButtonMenu activeIndex={0} borderRadius="20px">
+        <ButtonMenuItem as="a" href="https://defifarms.org">
           Link 1
         </ButtonMenuItem>
-        <ButtonMenuItem as="a" href="https://pancakeswap.finance">
+        <ButtonMenuItem as="a" href="https://defifarms.org">
           Link 2
         </ButtonMenuItem>
-        <ButtonMenuItem as="a" href="https://pancakeswap.finance">
+        <ButtonMenuItem as="a" href="https://defifarms.org">
           Link 3
         </ButtonMenuItem>
       </ButtonMenu>
@@ -108,7 +123,13 @@ export const DisabledMenu: React.FC = () => {
         </ButtonMenu>
       </Row>
       <Row>
-        <ButtonMenu activeIndex={index1} onItemClick={handleClick1} scale="sm" variant="subtle" ml="24px">
+        <ButtonMenu
+          activeIndex={index1}
+          onItemClick={handleClick1}
+          scale="sm"
+          variant="subtle"
+          ml="24px"
+        >
           <ButtonMenuItem>Button 1</ButtonMenuItem>
           <ButtonMenuItem>Button 2</ButtonMenuItem>
           <ButtonMenuItem>Button 3</ButtonMenuItem>
@@ -116,7 +137,14 @@ export const DisabledMenu: React.FC = () => {
         </ButtonMenu>
       </Row>
       <Row>
-        <ButtonMenu disabled activeIndex={index1} onItemClick={handleClick1} scale="sm" variant="subtle" ml="24px">
+        <ButtonMenu
+          disabled
+          activeIndex={index1}
+          onItemClick={handleClick1}
+          scale="sm"
+          variant="subtle"
+          ml="24px"
+        >
           <ButtonMenuItem>Disabled 1</ButtonMenuItem>
           <ButtonMenuItem>Disabled 2</ButtonMenuItem>
           <ButtonMenuItem>Disabled 3</ButtonMenuItem>
@@ -134,20 +162,25 @@ export const FullWidthMenu: React.FC = () => {
 
   return (
     <Box width="840px">
-      <ButtonMenu activeIndex={index} onItemClick={handleClick} fullWidth mb="24px">
+      <ButtonMenu
+        activeIndex={index}
+        onItemClick={handleClick}
+        fullWidth
+        mb="24px"
+      >
         <ButtonMenuItem>Button 1</ButtonMenuItem>
         <ButtonMenuItem>Button 2</ButtonMenuItem>
         <ButtonMenuItem>Button 3</ButtonMenuItem>
         <ButtonMenuItem>Button 4</ButtonMenuItem>
       </ButtonMenu>
       <ButtonMenu activeIndex={index} fullWidth scale="sm" variant="subtle">
-        <ButtonMenuItem as="a" href="https://pancakeswap.finance">
+        <ButtonMenuItem as="a" href="https://defifarms.org">
           Link 1
         </ButtonMenuItem>
-        <ButtonMenuItem as="a" href="https://pancakeswap.finance">
+        <ButtonMenuItem as="a" href="https://defifarms.org">
           Link 2
         </ButtonMenuItem>
-        <ButtonMenuItem as="a" href="https://pancakeswap.finance">
+        <ButtonMenuItem as="a" href="https://defifarms.org">
           Link 3
         </ButtonMenuItem>
       </ButtonMenu>

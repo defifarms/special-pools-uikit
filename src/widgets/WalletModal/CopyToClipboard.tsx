@@ -15,17 +15,18 @@ const StyleButton = styled(Text).attrs({ role: "button" })`
 `;
 
 const Tooltip = styled.div<{ isTooltipDisplayed: boolean }>`
-  display: ${({ isTooltipDisplayed }) => (isTooltipDisplayed ? "block" : "none")};
-  position: absolute;
-  bottom: -22px;
-  right: 0;
-  left: 0;
-  text-align: center;
-  background-color: ${({ theme }) => theme.colors.contrast};
-  color: ${({ theme }) => theme.colors.invertedContrast};
-  border-radius: 16px;
-  opacity: 0.7;
-`;
+    display: ${({ isTooltipDisplayed }) => (isTooltipDisplayed ? 'block' : 'none')};
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #4c0ac6;
+    color: ${({ theme }) => theme.colors.invertedContrast};
+    border-radius: 8px;
+    opacity: 0.9;
+    border: 1px solid #56ccf2;
+`
 
 const CopyToClipboard: React.FC<Props> = ({ toCopy, children, ...props }) => {
   const [isTooltipDisplayed, setIsTooltipDisplayed] = useState(false);

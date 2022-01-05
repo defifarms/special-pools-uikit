@@ -46,6 +46,25 @@ const scaleKeyValues = {
     butterSmearTwoTop: "22px",
     butterSmearTwoRight: "5px",
   },
+  lg: {
+    defifarmsSize: "32px",
+    travelDistance: "34px",
+    toggleHeight: "40px",
+    toggleWidth: "72px",
+    defifarmsThickness: "2px",
+    defifarmsTwoOffset: "-3px",
+    defifarmsThreeOffset: "-8px",
+    butterTop: "3px",
+    butterLeft: "16px",
+    butterWidth: "12px",
+    butterHeight: "11px",
+    butterThickness: "1px",
+    butterRadius: "4px",
+    butterSmearOneTop: "20px",
+    butterSmearOneLeft: "5px",
+    butterSmearTwoTop: "22px",
+    butterSmearTwoRight: "5px",
+  },
 };
 
 const getScale = (property: ScaleKeys) => ({
