@@ -706,8 +706,16 @@ var Icon$1F = function (props) {
 };
 
 var Icon$1E = function (props) {
-    return (React__default.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default.createElement("path", { d: "M4.5 12H7.5C8.05 12 8.5 11.55 8.5 11V7C8.5 6.45 8.05 6 7.5 6H4.5C3.95 6 3.5 6.45 3.5 7V11C3.5 11.55 3.95 12 4.5 12ZM4.5 19H7.5C8.05 19 8.5 18.55 8.5 18V14C8.5 13.45 8.05 13 7.5 13H4.5C3.95 13 3.5 13.45 3.5 14V18C3.5 18.55 3.95 19 4.5 19ZM10.5 19H13.5C14.05 19 14.5 18.55 14.5 18V14C14.5 13.45 14.05 13 13.5 13H10.5C9.95 13 9.5 13.45 9.5 14V18C9.5 18.55 9.95 19 10.5 19ZM16.5 19H19.5C20.05 19 20.5 18.55 20.5 18V14C20.5 13.45 20.05 13 19.5 13H16.5C15.95 13 15.5 13.45 15.5 14V18C15.5 18.55 15.95 19 16.5 19ZM10.5 12H13.5C14.05 12 14.5 11.55 14.5 11V7C14.5 6.45 14.05 6 13.5 6H10.5C9.95 6 9.5 6.45 9.5 7V11C9.5 11.55 9.95 12 10.5 12ZM15.5 7V11C15.5 11.55 15.95 12 16.5 12H19.5C20.05 12 20.5 11.55 20.5 11V7C20.5 6.45 20.05 6 19.5 6H16.5C15.95 6 15.5 6.45 15.5 7Z" })));
+    return (React__default.createElement(Svg, __assign({ viewBox: '0 0 28 27', fill: 'none', xmlns: 'http://www.w3.org/2000/svg' }, props),
+        React__default.createElement("g", { opacity: 0.8, filter: 'url(#prefix__filter0_b_50:2732)' },
+            React__default.createElement("rect", { width: 28, height: 27, rx: 1, transform: 'matrix(1 0 0 -1 0 27)', fill: '#6E2DE520' })),
+        React__default.createElement("path", { d: 'M24 23h-5v-5h5v5zm-7.5 0h-5v-5h5v5zM9 23H4v-5h5v5zm15-7.5h-5v-5h5v5zm-7.5 0h-5v-5h5v5zm-7.5 0H4v-5h5v5zM24 8h-5V3h5v5zm-7.5 0h-5V3h5v5zM9 8H4V3h5v5z' }),
+        React__default.createElement("defs", null,
+            React__default.createElement("filter", { id: 'prefix__filter0_b_50:2732', x: -200, y: -200, width: 428, height: 427, filterUnits: 'userSpaceOnUse', colorInterpolationFilters: 'sRGB' },
+                React__default.createElement("feFlood", { floodOpacity: 0, result: 'BackgroundImageFix' }),
+                React__default.createElement("feGaussianBlur", { in: 'BackgroundImage', stdDeviation: 100 }),
+                React__default.createElement("feComposite", { in2: 'SourceAlpha', operator: 'in', result: 'effect1_backgroundBlur_50:2732' }),
+                React__default.createElement("feBlend", { in: 'SourceGraphic', in2: 'effect1_backgroundBlur_50:2732', result: 'shape' })))));
 };
 
 var Icon$1D = function (props) {
@@ -881,8 +889,16 @@ var Icon$1j = function (props) {
 };
 
 var Icon$1i = function (props) {
-    return (React__default.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default.createElement("path", { d: "M4.5 14H6.5C7.05 14 7.5 13.55 7.5 13V11C7.5 10.45 7.05 10 6.5 10H4.5C3.95 10 3.5 10.45 3.5 11V13C3.5 13.55 3.95 14 4.5 14ZM4.5 19H6.5C7.05 19 7.5 18.55 7.5 18V16C7.5 15.45 7.05 15 6.5 15H4.5C3.95 15 3.5 15.45 3.5 16V18C3.5 18.55 3.95 19 4.5 19ZM4.5 9H6.5C7.05 9 7.5 8.55 7.5 8V6C7.5 5.45 7.05 5 6.5 5H4.5C3.95 5 3.5 5.45 3.5 6V8C3.5 8.55 3.95 9 4.5 9ZM9.5 14H19.5C20.05 14 20.5 13.55 20.5 13V11C20.5 10.45 20.05 10 19.5 10H9.5C8.95 10 8.5 10.45 8.5 11V13C8.5 13.55 8.95 14 9.5 14ZM9.5 19H19.5C20.05 19 20.5 18.55 20.5 18V16C20.5 15.45 20.05 15 19.5 15H9.5C8.95 15 8.5 15.45 8.5 16V18C8.5 18.55 8.95 19 9.5 19ZM8.5 6V8C8.5 8.55 8.95 9 9.5 9H19.5C20.05 9 20.5 8.55 20.5 8V6C20.5 5.45 20.05 5 19.5 5H9.5C8.95 5 8.5 5.45 8.5 6Z" })));
+    return (React__default.createElement(Svg, __assign({ viewBox: '0 0 28 27', fill: 'none', xmlns: 'http://www.w3.org/2000/svg' }, props),
+        React__default.createElement("g", { opacity: 0.8, filter: 'url(#prefix__filter0_b_50:2722)' },
+            React__default.createElement("rect", { width: 28, height: 27, rx: 1, transform: 'matrix(1 0 0 -1 0 27)', fill: '#6E2DE520' })),
+        React__default.createElement("path", { d: 'M4 3h5v5H4zM4 10.5h5v5H4zM4 18h5v5H4zM11.5 3H24v5H11.5zM11.5 10.5H24v5H11.5zM11.5 18H24v5H11.5z' }),
+        React__default.createElement("defs", null,
+            React__default.createElement("filter", { id: 'prefix__filter0_b_50:2722', x: -200, y: -200, width: 428, height: 427, filterUnits: 'userSpaceOnUse', colorInterpolationFilters: 'sRGB' },
+                React__default.createElement("feFlood", { floodOpacity: 0, result: 'BackgroundImageFix' }),
+                React__default.createElement("feGaussianBlur", { in: 'BackgroundImage', stdDeviation: 100 }),
+                React__default.createElement("feComposite", { in2: 'SourceAlpha', operator: 'in', result: 'effect1_backgroundBlur_50:2722' }),
+                React__default.createElement("feBlend", { in: 'SourceGraphic', in2: 'effect1_backgroundBlur_50:2722', result: 'shape' })))));
 };
 
 var Icon$1h = function (props) {
@@ -1708,7 +1724,7 @@ var getIcon = function (variant) {
             return Icon$2C;
     }
 };
-var IconLabel = styled.div(templateObject_1$13 || (templateObject_1$13 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
+var IconLabel = styled.div(templateObject_1$13 || (templateObject_1$13 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 10px 0 0 10px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 10px 0 0 10px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
     var theme = _a.theme;
     return theme.alert.background;
 });
@@ -1717,8 +1733,8 @@ var Details = styled.div(templateObject_2$u || (templateObject_2$u = __makeTempl
     var hasHandler = _a.hasHandler;
     return (hasHandler ? "".concat(withHandlerSpacing, "px") : "12px");
 });
-var CloseHandler = styled.div(templateObject_3$e || (templateObject_3$e = __makeTemplateObject(["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"], ["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"])));
-var StyledAlert = styled(Flex$1)(templateObject_4$d || (templateObject_4$d = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"])), function (_a) {
+var CloseHandler = styled.div(templateObject_3$e || (templateObject_3$e = __makeTemplateObject(["\n  border-radius: 0 10px 10px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"], ["\n  border-radius: 0 10px 10px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"])));
+var StyledAlert = styled(Flex$1)(templateObject_4$d || (templateObject_4$d = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 10px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 10px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.alert.background;
 });
@@ -1733,7 +1749,7 @@ var Alert = function (_a) {
             typeof children === "string" ? React__default.createElement(Text, { as: "p" }, children) : children),
         onClick && (React__default.createElement(CloseHandler, null,
             React__default.createElement(IconButton, { scale: "sm", variant: "text", onClick: onClick },
-                React__default.createElement(Icon$1u, { width: "24px", color: "currentColor" }))))));
+                React__default.createElement(Icon$1u, { width: "24px", color: "four" }))))));
 };
 var templateObject_1$13, templateObject_2$u, templateObject_3$e, templateObject_4$d;
 
@@ -1898,7 +1914,7 @@ var getBorderColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
     return theme.colors[variant === variants$6.SUBTLE ? "inputSecondary" : "disabled"];
 };
-var StyledButtonMenu = styled.div(templateObject_1$_ || (templateObject_1$_ = __makeTemplateObject(["\n    background-color: ", ";\n    border-radius: ", ";\n    display: ", ";\n    width: ", ";\n\n    & > button,\n    & > a {\n        margin-left: ", "; // To avoid focus shadow overlap\n        flex: ", ";\n    }\n\n    & > button + button,\n    & > a + a {\n    }\n\n    & > button,\n    & a {\n        box-shadow: none;\n    }\n\n    ", "\n    ", "\n  ", "\n"], ["\n    background-color: ", ";\n    border-radius: ", ";\n    display: ", ";\n    width: ", ";\n\n    & > button,\n    & > a {\n        margin-left: ", "; // To avoid focus shadow overlap\n        flex: ", ";\n    }\n\n    & > button + button,\n    & > a + a {\n    }\n\n    & > button,\n    & a {\n        box-shadow: none;\n    }\n\n    ", "\n    ", "\n  ", "\n"])), getBackgroundColor, function (_a) {
+var StyledButtonMenu = styled.div(templateObject_1$_ || (templateObject_1$_ = __makeTemplateObject(["\n    background-color: ", ";\n    border-radius: ", ";\n    display: ", ";\n    width: ", ";\n\n    & > button,\n    & > a {\n        flex: ", ";\n    }\n\n    & > button + button,\n    & > a + a {\n    }\n\n    & > button,\n    & a {\n        box-shadow: none;\n    }\n\n    ", "\n    ", "\n  ", "\n"], ["\n    background-color: ", ";\n    border-radius: ", ";\n    display: ", ";\n    width: ", ";\n\n    & > button,\n    & > a {\n        flex: ", ";\n    }\n\n    & > button + button,\n    & > a + a {\n    }\n\n    & > button,\n    & a {\n        box-shadow: none;\n    }\n\n    ", "\n    ", "\n  ", "\n"])), getBackgroundColor, function (_a) {
     var borderRadius = _a.borderRadius;
     return borderRadius;
 }, function (_a) {
@@ -1907,9 +1923,6 @@ var StyledButtonMenu = styled.div(templateObject_1$_ || (templateObject_1$_ = __
 }, function (_a) {
     var fullWidth = _a.fullWidth;
     return (fullWidth ? '100%' : 'auto');
-}, function (_a) {
-    var fullWidth = _a.fullWidth;
-    return (fullWidth ? '0px' : '2px');
 }, function (_a) {
     var fullWidth = _a.fullWidth;
     return (fullWidth ? 1 : 'auto');
@@ -3827,10 +3840,10 @@ var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), 
     } });
 
 var light$7 = {
-    background: lightColors.backgroundAlt,
+    background: '#3F09A280',
 };
 var dark$7 = {
-    background: darkColors.backgroundAlt,
+    background: '#3F09A280',
 };
 
 var light$6 = {
@@ -3920,14 +3933,8 @@ var isTouchDevice = function () {
     return "ontouchstart" in window || navigator.maxTouchPoints > 0;
 };
 
-var Arrow = styled.div(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"], ["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.tooltip.background;
-});
-var StyledTooltip = styled.div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"], ["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.tooltip.background;
-}, function (_a) {
+var Arrow = styled.div(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n    &,\n    &::before {\n        position: absolute;\n        width: 10px;\n        height: 10px;\n        border-radius: 2px;\n        z-index: -1;\n    }\n\n    &::before {\n        content: '';\n        transform: rotate(45deg);\n        background: #4c0ac6;\n        border: 1px solid #56ccf2;\n        z-index: 100;\n    }\n"], ["\n    &,\n    &::before {\n        position: absolute;\n        width: 10px;\n        height: 10px;\n        border-radius: 2px;\n        z-index: -1;\n    }\n\n    &::before {\n        content: '';\n        transform: rotate(45deg);\n        background: #4c0ac6;\n        border: 1px solid #56ccf2;\n        z-index: 100;\n    }\n"])));
+var StyledTooltip = styled.div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n    padding: 16px;\n    font-size: 16px;\n    line-height: 130%;\n    border-radius: 10px;\n    max-width: 320px;\n    z-index: 101;\n    background: #4c0ac6;\n    border: 1px solid #56ccf2;\n    color: ", ";\n    box-shadow: ", ";\n    opacity: 0.9;\n\n    &[data-popper-placement^='top'] > ", " {\n        bottom: -4px;\n    }\n\n    &[data-popper-placement^='bottom'] > ", " {\n        top: -4px;\n    }\n\n    &[data-popper-placement^='left'] > ", " {\n        right: -4px;\n    }\n\n    &[data-popper-placement^='right'] > ", " {\n        left: -4px;\n    }\n"], ["\n    padding: 16px;\n    font-size: 16px;\n    line-height: 130%;\n    border-radius: 10px;\n    max-width: 320px;\n    z-index: 101;\n    background: #4c0ac6;\n    border: 1px solid #56ccf2;\n    color: ", ";\n    box-shadow: ", ";\n    opacity: 0.9;\n\n    &[data-popper-placement^='top'] > ", " {\n        bottom: -4px;\n    }\n\n    &[data-popper-placement^='bottom'] > ", " {\n        top: -4px;\n    }\n\n    &[data-popper-placement^='left'] > ", " {\n        right: -4px;\n    }\n\n    &[data-popper-placement^='right'] > ", " {\n        left: -4px;\n    }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.tooltip.text;
 }, function (_a) {
