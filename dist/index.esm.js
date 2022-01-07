@@ -2326,10 +2326,7 @@ var getScale$2 = function (_a) {
             return "32px";
     }
 };
-var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"])), getScale$2, getScale$2, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.input;
-}, function (_a) {
+var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: #43109E80;\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: #43109E80;\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"])), getScale$2, getScale$2, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
 }, function (_a) {
@@ -4275,9 +4272,9 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
     }, [matchedCodeHandler]);
 };
 
-var ModalHeader = styled.div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"], ["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"])), function (_a) {
+var ModalHeader = styled.div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n    align-items: center;\n    background: ", ";\n    border-bottom: 1px solid ", ";\n    display: flex;\n    padding: 12px 24px;\n"], ["\n    align-items: center;\n    background: ", ";\n    border-bottom: 1px solid ", ";\n    display: flex;\n    padding: 12px 24px;\n"])), function (_a) {
     var background = _a.background;
-    return background || "transparent";
+    return background || '#3F09A1';
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.cardBorder;
@@ -4286,17 +4283,17 @@ var ModalTitle = styled(Flex$1)(templateObject_2$8 || (templateObject_2$8 = __ma
 var ModalBody = styled(Flex$1)(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  flex-direction: column;\n  max-height: 90vh;\n  overflow-y: auto;\n"], ["\n  flex-direction: column;\n  max-height: 90vh;\n  overflow-y: auto;\n"])));
 var ModalCloseButton = function (_a) {
     var onDismiss = _a.onDismiss;
-    return (React__default.createElement(IconButton, { variant: "text", onClick: onDismiss, "aria-label": "Close the dialog" },
-        React__default.createElement(Icon$1u, { color: "primary" })));
+    return (React__default.createElement(IconButton, { variant: 'text', onClick: onDismiss, "aria-label": 'Close the dialog' },
+        React__default.createElement(Icon$1u, { fontSize: 26, width: 26, height: 26, color: 'white' })));
 };
 var ModalBackButton = function (_a) {
     var onBack = _a.onBack;
-    return (React__default.createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
-        React__default.createElement(Icon$1T, { color: "primary" })));
+    return (React__default.createElement(IconButton, { variant: 'text', onClick: onBack, "area-label": 'go back', mr: '8px' },
+        React__default.createElement(Icon$1T, { fontSize: 26, color: 'white' })));
 };
-var ModalContainer = styled(Box)(templateObject_4$5 || (templateObject_4$5 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: ", ";\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n  backdrop-filter: blur(5px);\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: ", ";\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n  backdrop-filter: blur(5px);\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.modal.background;
+var ModalContainer = styled(Box)(templateObject_4$5 || (templateObject_4$5 = __makeTemplateObject(["\n    overflow: hidden;\n    background: ", ";\n    box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n    border: 1px solid ", ";\n    border-radius: ", ";\n    width: 100%;\n    max-height: 100vh;\n    z-index: ", ";\n    backdrop-filter: blur(5px);\n\n    ", " {\n        width: auto;\n        min-width: ", ";\n        max-width: 100%;\n    }\n"], ["\n    overflow: hidden;\n    background: ", ";\n    box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n    border: 1px solid ", ";\n    border-radius: ", ";\n    width: 100%;\n    max-height: 100vh;\n    z-index: ", ";\n    backdrop-filter: blur(5px);\n\n    ", " {\n        width: auto;\n        min-width: ", ";\n        max-width: 100%;\n    }\n"])), function (_a) {
+    _a.theme;
+    return '#2C007C90';
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.cardBorder;
@@ -4322,7 +4319,7 @@ var Modal = function (_a) {
         React__default.createElement(ModalHeader, { background: getThemeValue("colors.".concat(headerBackground), headerBackground)(theme) },
             React__default.createElement(ModalTitle, null,
                 onBack && React__default.createElement(ModalBackButton, { onBack: onBack }),
-                React__default.createElement(Heading, null, title)),
+                React__default.createElement(Heading, { scale: 'lg' }, title)),
             !hideCloseButton && React__default.createElement(ModalCloseButton, { onDismiss: onDismiss })),
         React__default.createElement(ModalBody, { p: bodyPadding }, children)));
 };
