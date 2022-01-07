@@ -193,7 +193,7 @@ var styleVariants$2 = (_b$3 = {},
         },
     },
     _b$3[variants$6.TERTIARY] = {
-        backgroundColor: "tertiary",
+        backgroundColor: "#43109E",
         boxShadow: "none",
         color: "primary",
     },
