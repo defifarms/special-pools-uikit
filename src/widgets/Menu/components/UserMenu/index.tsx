@@ -46,7 +46,7 @@ const LabelText = styled.div`
 const Menu = styled.div<{ isOpen: boolean }>`
   background-color: ${({ theme }) => theme.card.background};
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  border-radius: 16px;
+  border-radius: ${({ theme }) => theme.radii.default};
   padding-bottom: 4px;
   padding-top: 4px;
   pointer-events: auto;
