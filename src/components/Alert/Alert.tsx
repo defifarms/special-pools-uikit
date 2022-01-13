@@ -25,6 +25,7 @@ const getThemeColor = ({ theme, variant = variants.INFO }: ThemedIconLabel) => {
     case variants.SUCCESS:
       return theme.colors.success;
     case variants.INFO:
+      return theme.colors.info;
     default:
       return theme.colors.secondary;
   }
@@ -47,7 +48,7 @@ const getIcon = (variant: AlertProps["variant"] = variants.INFO) => {
 const IconLabel = styled.div<ThemedIconLabel>`
   background-color: ${getThemeColor};
   border-radius: 10px 0 0 10px;
-  color: ${({ theme }) => theme.alert.background};
+  color: ${({ theme }) => theme.colors.white};
   padding: 12px;
 `;
 
@@ -74,27 +75,36 @@ const StyledAlert = styled(Flex)`
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
 `;
 
+const WrapChildren = styled(Text)`
+    color: #1a1887;
+    p {
+        color: #1a1887;
+    }
+`
+
 const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
   const Icon = getIcon(variant);
 
   return (
-    <StyledAlert>
-      <IconLabel variant={variant} hasDescription={!!children}>
-        <Icon color="currentColor" width="24px" />
-      </IconLabel>
-      <Details hasHandler={!!onClick}>
-        <Text bold>{title}</Text>
-        {typeof children === "string" ? <Text as="p">{children}</Text> : children}
-      </Details>
-      {onClick && (
-        <CloseHandler>
-          <IconButton scale="sm" variant="text" onClick={onClick}>
-            <CloseIcon width="24px" color="four" />
-          </IconButton>
-        </CloseHandler>
-      )}
-    </StyledAlert>
-  );
+      <StyledAlert>
+          <IconLabel variant={variant} hasDescription={!!children}>
+              <Icon color='currentColor' width='24px' />
+          </IconLabel>
+          <Details hasHandler={!!onClick}>
+              <Text bold color='#1A1887'>
+                  {title}
+              </Text>
+              {typeof children === 'string' ? <Text color='#1A1887'>{children}</Text> : <WrapChildren>{children}</WrapChildren>}
+          </Details>
+          {onClick && (
+              <CloseHandler>
+                  <IconButton scale='sm' variant='text' onClick={onClick}>
+                      <CloseIcon width='24px' color='#1A1887' />
+                  </IconButton>
+              </CloseHandler>
+          )}
+      </StyledAlert>
+  )
 };
 
 export default Alert;

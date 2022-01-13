@@ -1,15 +1,16 @@
 import { Colors } from "./types";
 
 export const baseColors = {
-  failure: "#ED4B9E",
+  failure: "#FE4FAA",
   primary: "#3AB6DE",
   primaryBright: "#53DEE9",
   cyan: "#3AB6DE",
   primaryDark: "#0098A1",
   secondary: "#fff",
   tagSecondary: "#e6edfc",
-  success: "#31D0AA",
-  warning: "#FFB237",
+  success: "#43E2AE",
+  warning: "#FFB74A",
+  info: "#8C64FF",
   third: "#b1b1b1",
   four: "#FFB230",
   subNav: 'rgba(0, 0, 0, 0.12)',
