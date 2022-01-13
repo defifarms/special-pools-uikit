@@ -1738,6 +1738,7 @@ var getThemeColor = function (_a) {
         case variants$5.SUCCESS:
             return theme.colors.success;
         case variants$5.INFO:
+            return theme.colors.info;
         default:
             return theme.colors.secondary;
     }
@@ -1758,7 +1759,7 @@ var getIcon = function (variant) {
 };
 var IconLabel = styled__default["default"].div(templateObject_1$13 || (templateObject_1$13 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 10px 0 0 10px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 10px 0 0 10px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
     var theme = _a.theme;
-    return theme.alert.background;
+    return theme.colors.white;
 });
 var withHandlerSpacing = 32 + 12 + 8; // button size + inner spacing + handler position
 var Details = styled__default["default"].div(templateObject_2$u || (templateObject_2$u = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
@@ -1770,20 +1771,21 @@ var StyledAlert = styled__default["default"](Flex$1)(templateObject_4$d || (temp
     var theme = _a.theme;
     return theme.alert.background;
 });
+var WrapChildren = styled__default["default"](Text)(templateObject_5$5 || (templateObject_5$5 = __makeTemplateObject(["\n    color: #1a1887;\n    p {\n        color: #1a1887;\n    }\n"], ["\n    color: #1a1887;\n    p {\n        color: #1a1887;\n    }\n"])));
 var Alert = function (_a) {
     var title = _a.title, children = _a.children, variant = _a.variant, onClick = _a.onClick;
     var Icon = getIcon(variant);
     return (React__default["default"].createElement(StyledAlert, null,
         React__default["default"].createElement(IconLabel, { variant: variant, hasDescription: !!children },
-            React__default["default"].createElement(Icon, { color: "currentColor", width: "24px" })),
+            React__default["default"].createElement(Icon, { color: 'currentColor', width: '24px' })),
         React__default["default"].createElement(Details, { hasHandler: !!onClick },
-            React__default["default"].createElement(Text, { bold: true }, title),
-            typeof children === "string" ? React__default["default"].createElement(Text, { as: "p" }, children) : children),
+            React__default["default"].createElement(Text, { bold: true, color: '#1A1887' }, title),
+            typeof children === 'string' ? React__default["default"].createElement(Text, { color: '#1A1887' }, children) : React__default["default"].createElement(WrapChildren, null, children)),
         onClick && (React__default["default"].createElement(CloseHandler, null,
-            React__default["default"].createElement(IconButton, { scale: "sm", variant: "text", onClick: onClick },
-                React__default["default"].createElement(Icon$1u, { width: "24px", color: "four" }))))));
+            React__default["default"].createElement(IconButton, { scale: 'sm', variant: 'text', onClick: onClick },
+                React__default["default"].createElement(Icon$1u, { width: '24px', color: '#1A1887' }))))));
 };
-var templateObject_1$13, templateObject_2$u, templateObject_3$e, templateObject_4$d;
+var templateObject_1$13, templateObject_2$u, templateObject_3$e, templateObject_4$d, templateObject_5$5;
 
 var Grid = styled__default["default"](Box)(templateObject_1$12 || (templateObject_1$12 = __makeTemplateObject(["\n  display: grid;\n  ", "\n  ", "\n"], ["\n  display: grid;\n  ", "\n  ", "\n"])), styledSystem.flexbox, styledSystem.grid);
 var templateObject_1$12;
@@ -3826,15 +3828,16 @@ Tag.defaultProps = {
 };
 
 var baseColors = {
-    failure: "#ED4B9E",
+    failure: "#FE4FAA",
     primary: "#3AB6DE",
     primaryBright: "#53DEE9",
     cyan: "#3AB6DE",
     primaryDark: "#0098A1",
     secondary: "#fff",
     tagSecondary: "#e6edfc",
-    success: "#31D0AA",
-    warning: "#FFB237",
+    success: "#43E2AE",
+    warning: "#FFB74A",
+    info: "#8C64FF",
     third: "#b1b1b1",
     four: "#FFB230",
     subNav: 'rgba(0, 0, 0, 0.12)',
@@ -3869,10 +3872,10 @@ var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), 
     } });
 
 var light$7 = {
-    background: '#3F09A280',
+    background: '#FFFFFF',
 };
 var dark$7 = {
-    background: '#3F09A280',
+    background: '#FFFFFF',
 };
 
 var light$6 = {
@@ -5329,12 +5332,15 @@ var LabelText = styled__default["default"].div(templateObject_3 || (templateObje
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
-var Menu = styled__default["default"].div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: 280px;\n  visibility: visible;\n  z-index: 1001;\n\n  ", "\n\n  ", ":first-child {\n    border-radius: 8px 8px 0 0;\n  }\n\n  ", ":last-child {\n    border-radius: 0 0 8px 8px;\n  }\n"], ["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: 280px;\n  visibility: visible;\n  z-index: 1001;\n\n  ", "\n\n  ", ":first-child {\n    border-radius: 8px 8px 0 0;\n  }\n\n  ", ":last-child {\n    border-radius: 0 0 8px 8px;\n  }\n"])), function (_a) {
+var Menu = styled__default["default"].div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: ", ";\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: 280px;\n  visibility: visible;\n  z-index: 1001;\n\n  ", "\n\n  ", ":first-child {\n    border-radius: 8px 8px 0 0;\n  }\n\n  ", ":last-child {\n    border-radius: 0 0 8px 8px;\n  }\n"], ["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: ", ";\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: 280px;\n  visibility: visible;\n  z-index: 1001;\n\n  ", "\n\n  ", ":first-child {\n    border-radius: 8px 8px 0 0;\n  }\n\n  ", ":last-child {\n    border-radius: 0 0 8px 8px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.cardBorder;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.radii.default;
 }, function (_a) {
     var isOpen = _a.isOpen;
     return !isOpen &&

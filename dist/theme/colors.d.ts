@@ -9,6 +9,7 @@ export declare const baseColors: {
     tagSecondary: string;
     success: string;
     warning: string;
+    info: string;
     third: string;
     four: string;
     subNav: string;

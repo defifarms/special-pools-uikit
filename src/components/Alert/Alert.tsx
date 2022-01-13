@@ -80,6 +80,9 @@ const WrapChildren = styled(Text)`
     p {
         color: #1a1887;
     }
+    div {
+        color: #1a1887;
+    }
 `
 
 const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
