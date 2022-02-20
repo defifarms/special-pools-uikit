@@ -85,15 +85,7 @@ const MenuButtonMobile = styled(MenuButton)`
 
 const Logo: React.FC<Props> = ({ isChristmas, isPushed, togglePush, isDark, href, isMobile }) => {
   const isAbsoluteUrl = href.startsWith("http");
-  const innerLogo = (
-    <>
-      {!isPushed ? (
-        <LogoMobileIcon />
-        
-      ) : (isChristmas ? <ChristmasIcon /> : <LogoWithText className="desktop-icon" isDark={isDark} />)
-}
-    </>
-  );
+  const innerLogo = <>{!isPushed ? <LogoMobileIcon isDark={isDark} /> : <LogoWithText className='desktop-icon' isDark={isDark} />}</>
 
   return (
     <StyledWrapper isPushed={isPushed}>
