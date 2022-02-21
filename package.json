@@ -1,14 +1,14 @@
 {
-  "name": "@defifarms/special-uikit",
+  "name": "@loopstarter/special-uikit",
   "version": "0.1.5",
-  "description": "Set of UI components for defifarms projects",
+  "description": "Set of UI components for loopstarter projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "git://git@github.com:defifarms/defifarms-uikit.git",
+  "repository": "git://git@github.com:loopstarter/loopstarter-uikit.git",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",

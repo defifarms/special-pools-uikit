@@ -40,9 +40,7 @@ const StyledWrapper = styled(Flex) <{ isPushed: boolean }>`
     width: ${({ isPushed }) =>
     `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
-  ${({ theme }) => theme.mediaQueries.lg} {
-    background-color: #300095;
-  }
+  background-color: #300095;
 `
 
 const StyledLink = styled(Link)`
@@ -88,27 +86,21 @@ const Logo: React.FC<Props> = ({ isChristmas, isPushed, togglePush, isDark, href
   const innerLogo = <>{!isPushed ? <LogoMobileIcon isDark={isDark} /> : <LogoWithText className='desktop-icon' isDark={isDark} />}</>
 
   return (
-    <StyledWrapper isPushed={isPushed}>
-      <MenuButtonMobile
-        aria-label="Toggle menu"
-        onClick={togglePush}
-        mr="24px"
-        ml="20px"
-        className="hidden-desktop"
-      >
-        <HamburgerIcon width="28px" color={isPushed ? '#FFB230' : '#0F0B5F'} />
-      </MenuButtonMobile>
-      {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="DeFiFarms home page">
-          {innerLogo}
-        </StyledLink>
-      ) : (
-        <StyledLink to={href} aria-label="DeFiFarms home page">
-          {innerLogo}
-        </StyledLink>
-      )}
-    </StyledWrapper>
-  );
+      <StyledWrapper isPushed={isPushed}>
+          <MenuButtonMobile aria-label='Toggle menu' onClick={togglePush} mr='24px' ml='20px' className='hidden-desktop'>
+              <HamburgerIcon width='28px' color={isPushed ? '#FFB230' : '#FFB230'} />
+          </MenuButtonMobile>
+          {isAbsoluteUrl ? (
+              <StyledLink as='a' href={href} aria-label='Loopstarter home page' style={{ marginLeft: isPushed ? 0 : 32 }}>
+                  {innerLogo}
+              </StyledLink>
+          ) : (
+              <StyledLink to={href} aria-label='Loopstarter home page' style={{ marginLeft: isPushed ? 0 : 32 }}>
+                  {innerLogo}
+              </StyledLink>
+          )}
+      </StyledWrapper>
+  )
 };
 
 export default React.memo(

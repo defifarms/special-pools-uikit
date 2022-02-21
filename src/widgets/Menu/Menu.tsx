@@ -17,22 +17,22 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const StyledNav = styled.nav<{ showMenu: boolean }>`
-  position: fixed;
-  top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
-  left: 0;
-  transition: top 0.2s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // padding-right: 16px;
-  width: 100%;
-  height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.colors.white};
-  // border-bottom: solid 2px rgba(133, 133, 133, 0.1);
-  z-index: 20;
-  transform: translate3d(0, 0, 0);
-`;
+const StyledNav = styled.nav<{ showMenu: boolean; isMobile: boolean }>`
+    position: fixed;
+    top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
+    left: 0;
+    transition: top 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding-right: 16px;
+    width: 100%;
+    height: ${MENU_HEIGHT}px;
+    background-color: ${({ theme, isMobile }) => (isMobile ? '#300095' : theme.colors.white)};
+    // border-bottom: solid 2px rgba(133, 133, 133, 0.1);
+    z-index: 20;
+    transform: translate3d(0, 0, 0);
+`
 
 const BodyWrapper = styled.div`
   position: relative;
@@ -114,41 +114,37 @@ const Menu: React.FC<NavProps> = ({
   const homeLink = links.find((link) => link.label === "Home");
 
   return (
-    <Wrapper>
-      <StyledNav showMenu={showMenu}>
-        <Logo
-          isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={isDark}
-          href={homeLink?.href ?? "/"}
-          isMobile={isMobile}
-          isChristmas={isChristmas}
-        />
-        {userMenu}
-      </StyledNav>
-      <BodyWrapper>
-        <Panel
-          isPushed={isPushed}
-          isMobile={isMobile}
-          showMenu={showMenu}
-          langs={langs}
-          setLang={setLang}
-          currentLang={currentLang}
-          cakePriceUsd={cakePriceUsd}
-          pushNav={setIsPushed}
-          links={links}
-        />
-        <Inner isPushed={isPushed} showMenu={showMenu}>
-          {children}
-        </Inner>
-        <MobileOnlyOverlay
-          show={isPushed}
-          onClick={() => setIsPushed(false)}
-          role="presentation"
-        />
-      </BodyWrapper>
-    </Wrapper>
-  );
+      <Wrapper>
+          <StyledNav showMenu={showMenu} isMobile={isMobile}>
+              <Logo
+                  isPushed={isPushed}
+                  togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
+                  isDark={isDark}
+                  href={homeLink?.href ?? '/'}
+                  isMobile={isMobile}
+                  isChristmas={isChristmas}
+              />
+              {userMenu}
+          </StyledNav>
+          <BodyWrapper>
+              <Panel
+                  isPushed={isPushed}
+                  isMobile={isMobile}
+                  showMenu={showMenu}
+                  langs={langs}
+                  setLang={setLang}
+                  currentLang={currentLang}
+                  cakePriceUsd={cakePriceUsd}
+                  pushNav={setIsPushed}
+                  links={links}
+              />
+              <Inner isPushed={isPushed} showMenu={showMenu}>
+                  {children}
+              </Inner>
+              <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role='presentation' />
+          </BodyWrapper>
+      </Wrapper>
+  )
 };
 
 export default Menu;
