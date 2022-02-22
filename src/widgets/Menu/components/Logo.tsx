@@ -91,11 +91,11 @@ const Logo: React.FC<Props> = ({ isChristmas, isPushed, togglePush, isDark, href
               <HamburgerIcon width='28px' color={isPushed ? '#FFB230' : '#FFB230'} />
           </MenuButtonMobile>
           {isAbsoluteUrl ? (
-              <StyledLink as='a' href={href} aria-label='Loopstarter home page' style={{ marginLeft: isPushed ? 0 : 32 }}>
+              <StyledLink as='a' href={href} aria-label='Loopstarter home page' style={{ marginLeft: isPushed ? 32 : 0 }}>
                   {innerLogo}
               </StyledLink>
           ) : (
-              <StyledLink to={href} aria-label='Loopstarter home page' style={{ marginLeft: isPushed ? 0 : 32 }}>
+              <StyledLink to={href} aria-label='Loopstarter home page' style={{ marginLeft: isPushed ? 32 : 0 }}>
                   {innerLogo}
               </StyledLink>
           )}
