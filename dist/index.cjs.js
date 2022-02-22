@@ -4958,7 +4958,7 @@ var Logo = function (_a) {
     return (React__default["default"].createElement(StyledWrapper, { isPushed: isPushed },
         React__default["default"].createElement(MenuButtonMobile, { "aria-label": 'Toggle menu', onClick: togglePush, mr: '24px', ml: '20px', className: 'hidden-desktop' },
             React__default["default"].createElement(Icon$g, { width: '28px', color: isPushed ? '#FFB230' : '#FFB230' })),
-        isAbsoluteUrl ? (React__default["default"].createElement(StyledLink, { as: 'a', href: href, "aria-label": 'Loopstarter home page', style: { marginLeft: isPushed ? 0 : 32 } }, innerLogo)) : (React__default["default"].createElement(StyledLink, { to: href, "aria-label": 'Loopstarter home page', style: { marginLeft: isPushed ? 0 : 32 } }, innerLogo))));
+        isAbsoluteUrl ? (React__default["default"].createElement(StyledLink, { as: 'a', href: href, "aria-label": 'Loopstarter home page', style: { marginLeft: isPushed ? 32 : 0 } }, innerLogo)) : (React__default["default"].createElement(StyledLink, { to: href, "aria-label": 'Loopstarter home page', style: { marginLeft: isPushed ? 32 : 0 } }, innerLogo))));
 };
 var Logo$1 = React__default["default"].memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$d, templateObject_2$7, templateObject_3$4, templateObject_4$4, templateObject_5$1;
