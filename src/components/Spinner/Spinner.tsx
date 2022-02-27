@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import PanIcon from "./PanIcon";
 import DefifarmsIcon from "./DefifarmsIcon";
+import LoopsIcon from "./LoopsIcon";
 import { SpinnerProps } from "./types";
 
 const rotate = keyframes`
@@ -18,7 +19,7 @@ const float = keyframes`
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(10px);
+		transform: translatey(0px);
 	}
 	100% {
 		transform: translatey(0px);
@@ -29,13 +30,13 @@ const Container = styled.div`
   position: relative;
 `;
 
-const RotatingPancakeIcon = styled(DefifarmsIcon)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: ${rotate} 2s linear infinite;
-  transform: translate3d(0, 0, 0);
-`;
+const RotatingPancakeIcon = styled(LoopsIcon)`
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: ${rotate} 2s linear infinite;
+    transform: translate3d(0, 0, 0);
+`
 
 
 
