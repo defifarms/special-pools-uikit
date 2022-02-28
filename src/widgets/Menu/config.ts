@@ -27,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.defifarms.org",
+        href: "https://dex.loopstarter.com",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.defifarms.org/#/pool",
+        href: "https://dex.loopstarter.com/pools",
       },
     ],
   },
@@ -85,19 +85,19 @@ export const links = [
     items: [
       {
         label: "Overview",
-        href: "https://defifarms.info",
+        href: "https://loopstarter.com",
       },
       {
         label: "Tokens",
-        href: "https://defifarms.info/tokens",
+        href: "https://loopstarter.com/tokens",
       },
       {
         label: "Pairs",
-        href: "https://defifarms.info/pairs",
+        href: "https://loopstarter.com/pairs",
       },
       {
         label: "Accounts",
-        href: "https://defifarms.info/accounts",
+        href: "https://loopstarter.com/accounts",
       },
     ],
   },
@@ -121,19 +121,19 @@ export const links = [
     items: [
       {
         label: "Voting",
-        href: "https://voting.defifarms.org",
+        href: "https://voting.loopstarter.com",
       },
       {
         label: "Github",
-        href: "https://github.com/defifarms",
+        href: "https://github.com/loopstarter",
       },
       {
         label: "Docs",
-        href: "https://docs.defifarms.org",
+        href: "https://docs.loopstarter.com",
       },
       {
         label: "Blog",
-        href: "https://defifarms.medium.com",
+        href: "https://loopstarter.medium.com",
       },
     ],
   },
@@ -143,12 +143,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/DefifarmsNFT",
+    href: "https://t.me/Loopstarter",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/DeFiFarmsNFTs",
+    href: "https://twitter.com/loopstarter",
   },
 ];
 

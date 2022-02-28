@@ -251,7 +251,7 @@ export const UserMenu: React.FC = () => {
             </UserMenuItem>
             <UserMenuItem
               as="a"
-              href="https://defifarms.org"
+              href="https://loopstarter.com"
               target="_blank"
             >
               Link

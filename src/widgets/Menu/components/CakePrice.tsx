@@ -25,7 +25,7 @@ const PriceLink = styled.a`
 const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
   return cakePriceUsd ? (
     <PriceLink
-      href="https://coinmarketcap.com/currencies/defifarms-protocol/"
+      href="https://coinmarketcap.com/coins/"
       target="_blank"
     >
       <DefifarmsRoundIcon width="33px" height="33px" mr="8px" ml="46px" />
