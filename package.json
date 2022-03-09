@@ -1,6 +1,6 @@
 {
   "name": "@loopstarter/special-uikit",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Set of UI components for loopstarter projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
