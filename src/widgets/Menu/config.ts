@@ -28,6 +28,7 @@ export const links = [
       {
         label: "Exchange",
         href: "https://dex.loopstarter.com",
+        target: '_blank'
       },
       {
         label: "Liquidity",
@@ -54,7 +55,8 @@ export const links = [
   {
     label: "NFT",
     icon: "NftIcon",
-    href: "/nft",
+    href: 'https://testnet.binance.org/faucet-smart',
+    target: '_blank',
   },
   {
     label: "Team Battle",

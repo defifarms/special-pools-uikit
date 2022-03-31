@@ -99,22 +99,18 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           );
         }
         return (
-          <MenuEntry
-            key={entry.label}
-            isActive={entry.href === location.pathname}
-            className={calloutClass}
-          >
-            <MenuLink href={entry.href} onClick={handleClick}>
-              {iconElement}
-              <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
-              {entry.status && (
-                <LinkStatus color={entry.status.color} fontSize="12px">
-                  {entry.status.text}
-                </LinkStatus>
-              )}
-            </MenuLink>
-          </MenuEntry>
-        );
+            <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
+                <MenuLink href={entry.href} target={entry.target} onClick={handleClick}>
+                    {iconElement}
+                    <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
+                    {entry.status && (
+                        <LinkStatus color={entry.status.color} fontSize='12px'>
+                            {entry.status.text}
+                        </LinkStatus>
+                    )}
+                </MenuLink>
+            </MenuEntry>
+        )
       })}
     </Container>
   );

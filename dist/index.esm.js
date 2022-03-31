@@ -2574,7 +2574,7 @@ var Image = function (_a) {
 };
 var templateObject_1$I;
 
-var TokenImage = styled(Image)(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  &:before {\n    border-radius: 50%;\n    border: 1px solid rgba(0, 0, 0, 0.25);\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"], ["\n  &:before {\n    border-radius: 50%;\n    border: 1px solid rgba(0, 0, 0, 0.25);\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"])));
+var TokenImage = styled(Image)(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  &:before {\n    border-radius: 50%;\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"], ["\n  &:before {\n    border-radius: 50%;\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"])));
 var templateObject_1$H;
 
 var variants$4 = {
@@ -4773,6 +4773,7 @@ var links = [
             {
                 label: "Exchange",
                 href: "https://dex.loopstarter.com",
+                target: '_blank'
             },
             {
                 label: "Liquidity",
@@ -4799,7 +4800,8 @@ var links = [
     {
         label: "NFT",
         icon: "NftIcon",
-        href: "/nft",
+        href: 'https://testnet.binance.org/faucet-smart',
+        target: '_blank',
     },
     {
         label: "Team Battle",
@@ -5051,10 +5053,10 @@ var PanelBody = function (_a) {
                         item.status && (React__default.createElement(LinkStatus, { color: item.status.color, fontSize: "12px" }, item.status.text))))); })));
         }
         return (React__default.createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
-            React__default.createElement(MenuLink, { href: entry.href, onClick: handleClick },
+            React__default.createElement(MenuLink, { href: entry.href, target: entry.target, onClick: handleClick },
                 iconElement,
                 React__default.createElement(LinkLabelMemo, { isPushed: isPushed }, entry.label),
-                entry.status && (React__default.createElement(LinkStatus, { color: entry.status.color, fontSize: "12px" }, entry.status.text)))));
+                entry.status && (React__default.createElement(LinkStatus, { color: entry.status.color, fontSize: '12px' }, entry.status.text)))));
     })));
 };
 var templateObject_1$a;
